@@ -1,19 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
 import vanishingbutton from '@/components/vanishingbutton'
 import crystalball from '@/components/crystalball'
 import topbar from '@/components/topbar'
+import hangrysami from '@/components/hangrysami'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '/hello',
-      name: 'Hello',
-      component: Hello
-    },
     {
       path: '/vanishingbutton',
       name: 'vanishingbutton',
@@ -28,6 +23,11 @@ export default new Router({
       path: '/',
       name: 'topbar',
       component: topbar
+    },
+    {
+      path: '/hangrysami',
+      name: 'hangrysami',
+      component: hangrysami
     }
   ]
 })
