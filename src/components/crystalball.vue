@@ -1,14 +1,16 @@
 <template>
-  <div>
+  <div class="crystalball">
+    <h1>Gaze into the crystal ball</h1>
     <iframe src="https://giphy.com/embed/3o6ZsXWwgTWagYMikw" width="480" height="355" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
     <button v-on:click="randomFortune()">Fancy a fortune?</button>
-    <p>{{selectedFortune}}</p>
+    <h3>{{selectedFortune}}</h3>
+    <a href="/">Back to home page</a>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'crystalBall',
+  name: 'crystalball',
   data () {
     return {
       selectedFortuneNumber: '',
