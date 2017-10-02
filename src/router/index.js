@@ -33,7 +33,7 @@ export default new Router({
     {
       path: '/dogGenerator',
       name: 'dogGenerator',
-      component: dogGenerator
+      component: dogGenerator,
     }
   ]
 })

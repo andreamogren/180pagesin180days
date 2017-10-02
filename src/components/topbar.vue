@@ -1,7 +1,7 @@
 <template>
   <div class="topbar">
-  <h1>Welcome to Andrea's 180 pages in 180 days challenge!</h1>
-  <p>I started on the 20th of September 2017 (20 March 2018)</p>
+  <h1>Welcome to Andrea's Vue challenge!</h1>
+  <p>I started on the 20th of September 2017.</p>
     <nav class="topbar-navigation">
         <ul>
                 <li v-for="item in menuItems">
