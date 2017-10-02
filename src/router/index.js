@@ -4,6 +4,7 @@ import vanishingbutton from '@/components/vanishingbutton'
 import crystalball from '@/components/crystalball'
 import topbar from '@/components/topbar'
 import hangrysami from '@/components/hangrysami'
+import dogGenerator from '@/components/dogGenerator'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/hangrysami',
       name: 'hangrysami',
       component: hangrysami
+    },
+    {
+      path: '/dogGenerator',
+      name: 'dogGenerator',
+      component: dogGenerator
     }
   ]
 })

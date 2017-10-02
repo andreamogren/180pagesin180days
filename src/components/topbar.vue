@@ -25,6 +25,7 @@
                  { name: 'Vanishing button', state: 'vanishingbutton' },
                  { name: 'Crystal ball', state: 'crystalball' },
                  { name: 'Hangry Sami', state: 'hangrysami' },
+                 { name: 'Dog Generator', state: 'dogGenerator' },
                ],
 		       };
        },
