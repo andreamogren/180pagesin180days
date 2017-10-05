@@ -5,6 +5,7 @@ import crystalball from '@/components/crystalball'
 import topbar from '@/components/topbar'
 import hangrysami from '@/components/hangrysami'
 import dogGenerator from '@/components/dogGenerator'
+import halloweenPlaylist from '@/components/halloweenPlaylist'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/dogGenerator',
       name: 'dogGenerator',
       component: dogGenerator,
+    },
+    {
+      path: '/halloweenPlaylist',
+      name: 'halloweenPlaylist',
+      component: halloweenPlaylist,
     }
  ]
 })

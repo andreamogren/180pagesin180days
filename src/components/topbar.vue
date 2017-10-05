@@ -33,6 +33,7 @@
                  { name: 'Crystal ball', state: 'crystalball' },
                  { name: 'Hangry Sami', state: 'hangrysami' },
                  { name: 'Dog Generator', state: 'dogGenerator' },
+                 { name: 'halloweenPlaylist', state: 'halloweenPlaylist' }, 
                ],
 		       };
        },
@@ -60,7 +61,7 @@
   color: white;
 
   > .Cookie__button {
-    border: 1px solid white; 
+    border: 1px solid white;
   }
 }
 
