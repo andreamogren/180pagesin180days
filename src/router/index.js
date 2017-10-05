@@ -35,5 +35,5 @@ export default new Router({
       name: 'dogGenerator',
       component: dogGenerator,
     }
-  ]
+ ]
 })

@@ -9,12 +9,19 @@
                 </li>
         </ul>
 	</nav>
+  <cookie-law theme="mytheme">
+  <div slot="message">
+    Lorem Ipsum <router-link to="https://comprend.com">Click here</router-link>
+  </div>
+</cookie-law>
 </div>
 </template>
 
 
 
 <script>
+
+  import CookieLaw from 'vue-cookie-law';
 
    export default {
      name: 'topbar',
@@ -29,8 +36,12 @@
                ],
 		       };
        },
-       components: {
+       props: {
+         messsage: 'Lorem Ipsum',
        },
+       components: {
+         CookieLaw
+     },
 	   methods: {
 	   },
        computed: {
@@ -42,6 +53,17 @@
 
 
 <style scoped>
+.Cookie--mytheme {
+  background-color: black;
+  padding: 40px;
+  font-family: 'calibri';
+  color: white;
+
+  > .Cookie__button {
+    border: 1px solid white; 
+  }
+}
+
 .topbar {
 }
 
