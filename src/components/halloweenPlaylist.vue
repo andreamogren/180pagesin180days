@@ -1,7 +1,8 @@
 <template>
-  <div class="halloweenPlaylist">
-    <button @click="playSong">Play a spooky song!</button>
-    <div id="songcontainer"></div>
+  <div>
+    <button @click="playSong()">Play a spooky song!</button>
+    <!-- <audio controls autoplay><source src="../songs/spooky_scary_skeletons.mp3" type="audio/mpeg"></audio> -->
+    <div ref="songcontainer"></div>
     <a href="/">Back to home page</a>
   </div>
 </template>
@@ -15,20 +16,12 @@ export default {
   },
   methods: {
       playSong() {
-      const spookySong =
-      [
-      spookySong[0] = "songs/Spooky Scary Skeletons (Remix) - Extended Mix.mp3"
-      /*spookySong[1] = "Dogg/dKN9W2d.jpg"
-      spookySong[2] = "Dogg/tumblr_o5ylo4Co0J1uae2w5o1_1280.jpg"
-      spookySong[3] = "Dogg/Corgi.png"
-      spookySong[4] = "Dogg/fc66726153192e36bb9004406a40d6d1.jpg"
-      spookySong[5] = "Dogg/Go8XrPg.jpg"
-      spookySong[6] = "Dogg/mf7xVvi.jpg"
-      spookySong[7] = "Dogg/mnuBaTa.jpg"*/
-    ]
+      var spookySong = new Array ()
+          spookySong[0] = "../../static/songs/spooky_scary_skeletons.mp3"
+          spookySong[1] = "../../static/songs/spooky_scary_skeletons.mp3"
 
       const generateSpook = Math.floor(Math.random()*spookySong.length);
-      document.getElementById('songContainer').innerHTML = '<audio controls><source src="'+spookySong[generateSpook]+'" type="audio/mpeg"></audio>';
+      this.$refs.songcontainer.innerHTML = '<audio autoplay><source src="'+spookySong[generateSpook]+'" type="audio/mpeg"></audio>';
       console.log(spookySong[generateSpook]);
     },
   },
@@ -37,9 +30,15 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 
 @import url('https://fonts.googleapis.com/css?family=Creepster');
+
+.halloweenPlaylist {
+  background-image: url('../img/ghost.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 button {
   background-color: orange;

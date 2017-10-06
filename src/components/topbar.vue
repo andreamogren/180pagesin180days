@@ -9,11 +9,6 @@
                 </li>
         </ul>
 	</nav>
-  <cookie-law theme="mytheme">
-  <div slot="message">
-    Lorem Ipsum <router-link to="https://comprend.com">Click here</router-link>
-  </div>
-</cookie-law>
 </div>
 </template>
 
@@ -33,15 +28,11 @@
                  { name: 'Crystal ball', state: 'crystalball' },
                  { name: 'Hangry Sami', state: 'hangrysami' },
                  { name: 'Dog Generator', state: 'dogGenerator' },
-                 { name: 'halloweenPlaylist', state: 'halloweenPlaylist' }, 
+                 { name: 'Halloween Playlist', state: 'halloweenPlaylist' },
                ],
 		       };
        },
-       props: {
-         messsage: 'Lorem Ipsum',
-       },
        components: {
-         CookieLaw
      },
 	   methods: {
 	   },
