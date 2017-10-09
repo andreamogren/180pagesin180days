@@ -3,7 +3,7 @@
     <button @click="playSong()">Play a spooky song!</button>
     <!-- <audio controls autoplay><source src="../songs/spooky_scary_skeletons.mp3" type="audio/mpeg"></audio> -->
     <div ref="songcontainer"></div>
-    <a href="/">Back to home page</a>
+    <a id="back-home" href="/">Back to home page</a>
   </div>
 </template>
 
@@ -18,7 +18,15 @@ export default {
       playSong() {
       var spookySong = new Array ()
           spookySong[0] = "../../static/songs/spooky_scary_skeletons.mp3"
-          spookySong[1] = "../../static/songs/spooky_scary_skeletons.mp3"
+          spookySong[1] = "../../static/songs/GhostnGhost - Sir Ghostington.mp3"
+          spookySong[2] = "../../static/songs/Haunted Scottish Castle.mp3"
+          spookySong[3] = "../../static/songs/This Is Halloween.mp3"
+          spookySong[4] = "../../static/songs/Thriller.mp3"
+          spookySong[5] = "../../static/songs/Lavender Town.mp3"
+          spookySong[6] = "../../static/songs/Superstition.mp3"
+          spookySong[7] = "../../static/songs/Monsters.mp3"
+          spookySong[8] = "../../static/songs/Boogeyman.mp3"
+          spookySong[9] = "../../static/songs/Boos Haunted Bash.mp3"
 
       const generateSpook = Math.floor(Math.random()*spookySong.length);
       this.$refs.songcontainer.innerHTML = '<audio autoplay><source src="'+spookySong[generateSpook]+'" type="audio/mpeg"></audio>';
@@ -40,6 +48,12 @@ export default {
   background-size: cover;
 }
 
+#back-home {
+  color: darkred;
+  font-size: 25px;
+  font-family: 'Creepster', cursive;
+}
+
 button {
   background-color: orange;
   color: black;
@@ -53,7 +67,6 @@ button {
   margin-left: auto;
   margin-right: auto;
   font-family: 'Creepster', cursive;
-
 }
 
 </style>
