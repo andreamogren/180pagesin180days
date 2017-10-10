@@ -26,7 +26,7 @@ export default {
           spookySong[6] = "../../static/songs/Superstition.mp3"
           spookySong[7] = "../../static/songs/Monsters.mp3"
           spookySong[8] = "../../static/songs/Boogeyman.mp3"
-          spookySong[9] = "../../static/songs/Boos Haunted Bash.mp3"
+          spookySong[9] = "../../static/songs/Boos Haunted Bash.mp3" 
 
       const generateSpook = Math.floor(Math.random()*spookySong.length);
       this.$refs.songcontainer.innerHTML = '<audio autoplay><source src="'+spookySong[generateSpook]+'" type="audio/mpeg"></audio>';
