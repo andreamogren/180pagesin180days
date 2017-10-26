@@ -141,11 +141,11 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/vuechallenge";
+/******/ 	__webpack_require__.p = "/vuechallenge/";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/ })
 /************************************************************************/
 /******/ ([]);
-//# sourceMappingURL=manifest.97cd5d486a03ef52c8b5.js.map
+//# sourceMappingURL=manifest.946b25e2be8d608c492d.js.map
