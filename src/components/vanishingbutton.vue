@@ -27,13 +27,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.blue {
-  color: blue;
-
-}
-.green{
-  color: green;
-
+.vanishingbutton {
+  text-align: center; 
 }
 
 h1, h2 {

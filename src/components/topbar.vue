@@ -29,6 +29,7 @@
                  { name: 'Hangry Sami', state: 'hangrysami' },
                  { name: 'Dog Generator', state: 'dogGenerator' },
                  { name: 'Halloween Playlist', state: 'halloweenPlaylist' },
+                 { name: 'Add blog', state: 'addblog' },
                ],
 		       };
        },
@@ -45,18 +46,9 @@
 
 
 <style scoped>
-.Cookie--mytheme {
-  background-color: black;
-  padding: 40px;
-  font-family: 'calibri';
-  color: white;
 
-  > .Cookie__button {
-    border: 1px solid white;
-  }
-}
-
-.topbar {
+.topbar p, h1 {
+  text-align: center;
 }
 
 ul {

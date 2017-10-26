@@ -1,7 +1,6 @@
 <template>
   <div>
     <button @click="playSong()">Play a spooky song!</button>
-    <!-- <audio controls autoplay><source src="../songs/spooky_scary_skeletons.mp3" type="audio/mpeg"></audio> -->
     <div ref="songcontainer"></div>
     <a id="back-home" href="/">Back to home page</a>
   </div>
@@ -26,7 +25,7 @@ export default {
           spookySong[6] = "../../static/songs/Superstition.mp3"
           spookySong[7] = "../../static/songs/Monsters.mp3"
           spookySong[8] = "../../static/songs/Boogeyman.mp3"
-          spookySong[9] = "../../static/songs/Boos Haunted Bash.mp3" 
+          spookySong[9] = "../../static/songs/Boos Haunted Bash.mp3"
 
       const generateSpook = Math.floor(Math.random()*spookySong.length);
       this.$refs.songcontainer.innerHTML = '<audio autoplay><source src="'+spookySong[generateSpook]+'" type="audio/mpeg"></audio>';
@@ -46,6 +45,7 @@ export default {
   background-image: url('../img/ghost.gif');
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
 
 #back-home {

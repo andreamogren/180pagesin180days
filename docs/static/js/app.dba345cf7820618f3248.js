@@ -82,7 +82,7 @@ webpackJsonp([1],{
   name: 'topbar',
   data() {
     return {
-      menuItems: [{ name: 'Vanishing button', state: 'vanishingbutton' }, { name: 'Crystal ball', state: 'crystalball' }, { name: 'Hangry Sami', state: 'hangrysami' }, { name: 'Dog Generator', state: 'dogGenerator' }, { name: 'Halloween Playlist', state: 'halloweenPlaylist' }]
+      menuItems: [{ name: 'Vanishing button', state: 'vanishingbutton' }, { name: 'Crystal ball', state: 'crystalball' }, { name: 'Hangry Sami', state: 'hangrysami' }, { name: 'Dog Generator', state: 'dogGenerator' }, { name: 'Halloween Playlist', state: 'halloweenPlaylist' }, { name: 'Add blog', state: 'addblog' }]
     };
   },
   components: {},
@@ -192,11 +192,70 @@ var Component = normalizeComponent(
 
 /***/ }),
 
-/***/ "KKqL":
+/***/ "IJKX":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+  name: 'addblog',
+  data() {
+    return {
+      blog: {
+        title: '',
+        text: '',
+        categories: []
+      }
+    };
+  },
+  methods: {},
+  computed: {}
+});
+
+/***/ }),
+
+/***/ "KKqL":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 //
 //
 //
@@ -375,6 +434,8 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_hangrysami__ = __webpack_require__("xEli");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_dogGenerator__ = __webpack_require__("us1d");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_halloweenPlaylist__ = __webpack_require__("I2li");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_addblog__ = __webpack_require__("qLkz");
+
 
 
 
@@ -411,6 +472,10 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
     path: '/halloweenPlaylist',
     name: 'halloweenPlaylist',
     component: __WEBPACK_IMPORTED_MODULE_7__components_halloweenPlaylist__["a" /* default */]
+  }, {
+    path: '/add-blog',
+    name: 'addblog',
+    component: __WEBPACK_IMPORTED_MODULE_8__components_addblog__["a" /* default */]
   }]
 }));
 
@@ -564,6 +629,57 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 
 /***/ }),
 
+/***/ "qLkz":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_addblog_vue__ = __webpack_require__("IJKX");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2014122e_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_vue_loader_lib_selector_type_template_index_0_addblog_vue__ = __webpack_require__("uqry");
+function injectStyle (ssrContext) {
+  __webpack_require__("u73f")
+}
+var normalizeComponent = __webpack_require__("VU/8")
+/* script */
+
+/* template */
+
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-2014122e"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_addblog_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2014122e_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_vue_loader_lib_selector_type_template_index_0_addblog_vue__["a" /* default */],
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+
+/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
+
+
+/***/ }),
+
+/***/ "u73f":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "uqry":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"addblog"},[_c('h2',[_vm._v("Add new blog post")]),_vm._v(" "),_c('form',[_c('label',[_vm._v("Blog title: ")]),_c('br'),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model.lazy",value:(_vm.blog.title),expression:"blog.title",modifiers:{"lazy":true}}],attrs:{"type":"text"},domProps:{"value":(_vm.blog.title)},on:{"change":function($event){_vm.blog.title=$event.target.value}}}),_c('br'),_vm._v(" "),_c('label',[_vm._v("Blog text: ")]),_c('br'),_vm._v(" "),_c('textarea',{directives:[{name:"model",rawName:"v-model.lazy",value:(_vm.blog.text),expression:"blog.text",modifiers:{"lazy":true}}],domProps:{"value":(_vm.blog.text)},on:{"change":function($event){_vm.blog.text=$event.target.value}}})]),_vm._v(" "),_c('br'),_vm._v(" "),_c('div',{attrs:{"id":"checkboxes"}},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.blog.categories),expression:"blog.categories"}],attrs:{"type":"checkbox","value":"Doggo"},domProps:{"checked":Array.isArray(_vm.blog.categories)?_vm._i(_vm.blog.categories,"Doggo")>-1:(_vm.blog.categories)},on:{"__c":function($event){var $$a=_vm.blog.categories,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v="Doggo",$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.blog.categories=$$a.concat([$$v]))}else{$$i>-1&&(_vm.blog.categories=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.blog.categories=$$c}}}}),_vm._v(" "),_c('label',[_vm._v("Doggo")]),_c('br'),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.blog.categories),expression:"blog.categories"}],attrs:{"type":"checkbox","value":"Ghost"},domProps:{"checked":Array.isArray(_vm.blog.categories)?_vm._i(_vm.blog.categories,"Ghost")>-1:(_vm.blog.categories)},on:{"__c":function($event){var $$a=_vm.blog.categories,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v="Ghost",$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.blog.categories=$$a.concat([$$v]))}else{$$i>-1&&(_vm.blog.categories=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.blog.categories=$$c}}}}),_vm._v(" "),_c('label',[_vm._v("Ghost")]),_c('br'),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.blog.categories),expression:"blog.categories"}],attrs:{"type":"checkbox","value":"Penguin"},domProps:{"checked":Array.isArray(_vm.blog.categories)?_vm._i(_vm.blog.categories,"Penguin")>-1:(_vm.blog.categories)},on:{"__c":function($event){var $$a=_vm.blog.categories,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v="Penguin",$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.blog.categories=$$a.concat([$$v]))}else{$$i>-1&&(_vm.blog.categories=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.blog.categories=$$c}}}}),_vm._v(" "),_c('label',[_vm._v("Penguin")]),_c('br'),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.blog.categories),expression:"blog.categories"}],attrs:{"type":"checkbox","value":"Noodles"},domProps:{"checked":Array.isArray(_vm.blog.categories)?_vm._i(_vm.blog.categories,"Noodles")>-1:(_vm.blog.categories)},on:{"__c":function($event){var $$a=_vm.blog.categories,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v="Noodles",$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.blog.categories=$$a.concat([$$v]))}else{$$i>-1&&(_vm.blog.categories=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.blog.categories=$$c}}}}),_vm._v(" "),_c('label',[_vm._v("Noodles")])]),_vm._v(" "),_c('div',[_c('h3',[_vm._v("Preview")]),_vm._v(" "),_vm._m(0),_vm._v("\n      "+_vm._s(_vm.blog.title)+"\n      "),_vm._m(1),_vm._v("\n      "+_vm._s(_vm.blog.text)+"\n      "),_vm._m(2),_vm._v(" "),_c('ul',_vm._l((_vm.blog.categories),function(category){return _c('li',[_vm._v(_vm._s(category))])}))]),_vm._v(" "),_c('a',{attrs:{"href":"/"}},[_vm._v("Back to home page")])])}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('p',[_c('b',[_vm._v("Blog title: ")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('p',[_c('b',[_vm._v("Blog text: ")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('p',[_c('b',[_vm._v("Categories:  ")])])}]
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+
 /***/ "us1d":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -709,4 +825,4 @@ var Component = normalizeComponent(
 /***/ })
 
 },["NHnr"]);
-//# sourceMappingURL=app.c7876c1a09aad6f1da4a.js.map
+//# sourceMappingURL=app.dba345cf7820618f3248.js.map

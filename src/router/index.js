@@ -6,6 +6,7 @@ import topbar from '@/components/topbar'
 import hangrysami from '@/components/hangrysami'
 import dogGenerator from '@/components/dogGenerator'
 import halloweenPlaylist from '@/components/halloweenPlaylist'
+import addblog from '@/components/addblog'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/halloweenPlaylist',
       name: 'halloweenPlaylist',
       component: halloweenPlaylist,
-    }
+    },
+    {
+      path: '/add-blog',
+      name: 'addblog',
+      component: addblog,
+    },
  ]
 })

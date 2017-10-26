@@ -91,7 +91,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "static/js/" + chunkId + "." + {"0":"ebf7f81818dbf82de35f","1":"c7876c1a09aad6f1da4a"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "static/js/" + chunkId + "." + {"0":"ebf7f81818dbf82de35f","1":"dba345cf7820618f3248"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -141,11 +141,11 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/vuechallenge";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/ })
 /************************************************************************/
 /******/ ([]);
-//# sourceMappingURL=manifest.e564f7b03408be585f96.js.map
+//# sourceMappingURL=manifest.97cd5d486a03ef52c8b5.js.map

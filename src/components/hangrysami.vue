@@ -52,6 +52,11 @@
 
 
 <style scoped>
+
+.hangrysami {
+  text-align: center;
+}
+
 #sami{
     width: 400px;
     height: 600px;

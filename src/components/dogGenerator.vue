@@ -49,6 +49,10 @@ import axios from 'axios';
 
 <style scope>
 
+.dogGenerator {
+  text-align: center; 
+}
+
   .headers-div {
   	display: block;
   	margin-left: auto;
